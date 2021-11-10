@@ -50,10 +50,12 @@ export PKCS11_PIN="dummy"
 # down TLS negotiation performance
 # as well as the one-time DH parms
 # generation process.
-export DH_KEY_SIZE=2048
+#export DH_KEY_SIZE=2048
+export DH_KEY_SIZE=4096
 
 # Private key size
-export KEY_SIZE=4096
+#export KEY_SIZE=4096
+export KEY_SIZE=8192
 
 # In how many days should the root CA key expire?
 export CA_EXPIRE=3650
@@ -64,14 +66,13 @@ export KEY_EXPIRE=3650
 # These are the default values for fields
 # which will be placed in the certificate.
 # Don't leave any of these fields blank.
-export KEY_COUNTRY="US"
-export KEY_PROVINCE="CA"
-export KEY_CITY="SanFrancisco"
-export KEY_ORG="Fort-Funston"
-export KEY_EMAIL="me@myhost.mydomain"
-export KEY_EMAIL=mail@host.domain
-export KEY_CN=changeme
-export KEY_NAME=changeme
-export KEY_OU=changeme
+export KEY_COUNTRY="GB"
+export KEY_PROVINCE="IF"
+export KEY_CITY="Reading"
+export KEY_ORG="luxagen.net"
+export KEY_EMAIL="hello@luxagen.com"
+export KEY_CN="rdg.luxagen.net"
+export KEY_NAME="luxagen.net VPN"
+export KEY_OU="IT infrastructure"
 export PKCS11_MODULE_PATH=changeme
 export PKCS11_PIN=1234
